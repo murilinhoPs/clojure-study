@@ -42,7 +42,7 @@
 
 (defn sum-discount-applied-to-selected-values
   "Soma o valor total dos preços após o desconto aplicado com o reduce"
-  [] ;
+  []
   (->> (filter aula3/price-greater-than-90? values)
        (map #(aula3/new-discount aula3/apply-discount-when? %))
        (reduce +)))
