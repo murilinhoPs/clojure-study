@@ -35,13 +35,16 @@
 
 (defn apply-discount-to-selected-values
   "Aplica o desconto para os valores que são maior de 90, que podem ter um desconto"
-  [] ;; insere a lista filtrada como ultimo elemento do map, que seria o values na função anterior (thread last)
+  [] 
   (->> (filter aula3/price-greater-than-90? values)
        (map #(aula3/new-discount aula3/apply-discount-when? %))))
+; insere a lista filtrada como ultimo elemento do map, que seria o values na função anterior (thread last)
 
 (defn sum-discount-applied-to-selected-values
   "Soma o valor total dos preços após o desconto aplicado com o reduce"
-  [] ;; insere a lista filtrada com os descontos aplicados no ultimo elemento do reduce, que seriam o values na função anterior
+  [] ;
   (->> (filter aula3/price-greater-than-90? values)
        (map #(aula3/new-discount aula3/apply-discount-when? %))
-       (reduce +))) ;;thread last adiciona o elemento como ultimo argumento da proxima função
+       (reduce +)))
+
+; insere a lista filtrada com os descontos aplicados no ultimo elemento do reduce, que seriam o values na função anterior

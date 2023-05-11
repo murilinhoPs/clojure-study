@@ -28,3 +28,7 @@ lista -> [1 2 3 4 5 6 7 8 9 10]
 `(- 6 1)` -> `(dec 6)` = 5
 
 - Mesmo retorno. `dec` diminui em 1 o valor passado
+
+### Threading 
+- thread last adiciona o elemento como **ultimo** argumento da proxima função
+- thread first adiciona o elemento como **primeiro** argumento da proxima função
