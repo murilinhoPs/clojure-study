@@ -44,4 +44,4 @@
   [] ;; insere a lista filtrada com os descontos aplicados no ultimo elemento do reduce, que seriam o values na função anterior
   (->> (filter aula3/price-greater-than-90? values)
        (map #(aula3/new-discount aula3/apply-discount-when? %))
-       (reduce +)))
+       (reduce +))) ;;thread last adiciona o elemento como ultimo argumento da proxima função
