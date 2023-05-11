@@ -25,6 +25,5 @@
   (if (apply-discount? value)
     (let [discount-percentage (/ 10.0 100.0)
           discount-value (* value discount-percentage)]
-      (println "Calculando o desconto de -" discount-value "%")
       (- value  discount-value))
     value))

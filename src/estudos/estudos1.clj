@@ -11,7 +11,7 @@
     value))
 
 
-(def drinks ["Water", "Fanta"])
+(def drinks ["Water", "Fanta"]) ;; Imutable
 drinks
 
 (defn can-drink 
