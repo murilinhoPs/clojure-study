@@ -34,7 +34,6 @@
   (map #(aula3/new-discount aula3/apply-discount-when? %) values))
 
 (defn apply-discount-to-selected-values
-  "Aplica o desconto para os valores que são maior de 90, que podem ter um desconto"
   [] 
   (->> (filter aula3/price-greater-than-90? values)
        (map #(aula3/new-discount aula3/apply-discount-when? %))))
