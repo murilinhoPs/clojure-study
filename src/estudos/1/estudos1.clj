@@ -1,4 +1,4 @@
-(ns estudos.estudos1)
+(ns estudos.1.estudos1)
 
 (defn discount
   "Retorna o valor do produto com desconto de 10% se o valor for maior que 100"

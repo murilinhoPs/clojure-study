@@ -1,5 +1,5 @@
-(ns estudos.aula4
-  (:require [estudos.aula3 :as aula3]))
+(ns estudos.1.aula4
+  (:require [estudos.1.aula3 :as aula3]))
 
 (def values [30 50 400 1000]);; IMUTABLE
 

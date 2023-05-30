@@ -1,4 +1,4 @@
-(ns estudos.aula3)
+(ns estudos.1.aula3)
 
 (defn apply-discount-if?
   [price]

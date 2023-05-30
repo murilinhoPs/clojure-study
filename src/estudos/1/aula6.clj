@@ -1,4 +1,4 @@
-(ns estudos.aula6)
+(ns estudos.1.aula6)
 
 (def order {:mochila {:count 2
                       :price 30}
