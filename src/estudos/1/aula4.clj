@@ -28,13 +28,20 @@
   [new-value]
   (update values 0 new-value))
 
-(defn apply-discount-to-values 
+(defn apply-discount-to-values
   "Aplica o desconto para todos os valores da lista"
   [] ;; % pega o valor iterado do values(value)
   (map #(aula3/new-discount aula3/apply-discount-when? %) values))
 
 (defn apply-discount-to-selected-values
-  [] 
+  []
+  (map #(aula3/new-discount aula3/apply-discount-when? %) (filter aula3/price-greater-than-90? values)))
+; função anoônima # recebe um parâmetro de [list], essa lista são os valores que passei no map dos valores do (filter)
+; (filter) the values, (map) through the values and for-each, apply the discount-when -> it receives a value from
+; the [list] and apply the discount to that value, which is the %
+
+(defn apply-discount-to-selected-values-last
+  []
   (->> (filter aula3/price-greater-than-90? values)
        (map #(aula3/new-discount aula3/apply-discount-when? %))))
 ; insere a lista filtrada como ultimo elemento do map, que seria o values na função anterior (thread last)
